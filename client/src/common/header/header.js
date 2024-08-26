@@ -1,4 +1,6 @@
 import React from "react";
+import MailIcon from "@mui/icons-material/Mail";
+import NotificationsActiveIcon from "@mui/icons-material/NotificationsActive";
 import "./header.css";
 
 function Header() {
@@ -25,24 +27,28 @@ function Header() {
           </ul>
         </div>
         <div className="search-input-div">
-          <input type="text" className="search-input" />
+          <input type="text" className="search-input" placeholder="Search" />
         </div>
         <div className="header-second-link">
           <ul>
-            <li>
-              <a href="/">Another</a>
+            <li className="mail-li">
+              <a href="/" className="mail-icon">
+                <MailIcon />
+              </a>
             </li>
-            <li>
-              <a href="/">Anotherthi</a>
+            <li className="alarm-li">
+              <a href="/" className="alarm-icon">
+                <NotificationsActiveIcon />
+              </a>
             </li>
           </ul>
         </div>
         <div className="btn">
-          <div className="login-btn">
-            <button>Login</button>
+          <div className="login-div">
+            <button className="login-btn">Login</button>
           </div>
-          <div className="register-btn">
-            <button>Register</button>
+          <div className="register-div">
+            <button className="register-btn">Register</button>
           </div>
         </div>
       </div>

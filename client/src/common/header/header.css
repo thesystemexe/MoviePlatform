@@ -47,6 +47,22 @@
 
 .search-input {
   width: 400px;
+  height: 26px;
+  border-radius: 15px;
+  background-color: #3b567d;
+  padding: 2px 5px;
+  border: none;
+  caret-color: #517abc;
+  color: #a2b3cd;
+}
+
+.search-input:focus {
+  border: 1px solid #cccccc;
+  outline: none;
+}
+
+.search-input::placeholder {
+  padding: 0px 5px;
 }
 
 .header-second-link {
@@ -59,4 +75,31 @@
   align-items: center;
   gap: 60px;
   padding: auto;
+}
+.mail-icon svg {
+  font-size: 1.8rem;
+}
+
+.mail-li {
+  margin-left: 20px;
+}
+
+.alarm-icon svg {
+  font-size: 1.8rem;
+}
+
+.login-btn {
+  background-color: #ffc907;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.register-btn {
+  background-color: #ffc907;
+  padding: 7px 14px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
